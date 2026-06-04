@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Veículos — Busca Fácil</title>
+
+    <link rel="icon" type="image/png" href="assets/procurar.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+          <!--DataTables-->
+
+    <link rel="stylesheet"
+          href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+
+    <!--Jquery-->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- DataTables js --> 
+    <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+
+<header class="header-top">
+
+    <div class="logo-menu">
+        <img src="assets/logo3.png" alt="Logo">
+        <span>Busca Fácil</span>
+    </div>
+
+    <nav class="menu">
+
+        <a href="home.html">
+            <i class="fa-solid fa-house"></i>
+            Início
+        </a>
+
+        <a href="gerenciar.html">
+            <i class="fa-solid fa-car"></i>
+            Veículos
+        </a>
+
+        <a href="feedbacks.html">
+            <i class="fa-solid fa-comments"></i>
+            Feedbacks
+        </a>
+
+        <a href="sobre.html">
+            <i class="fa-solid fa-users"></i>
+            Sobre Nós
+        </a>
+
+        <a href="index.html" class="btn-login">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Sair
+        </a>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <h1 class="page-title">
+        Gerenciamento de Veículos
+    </h1>
+
+    <p class="page-subtitle">
+        Cadastro e consulta de veículos disponíveis no sistema.
+    </p>
+
+    <div class="section-card">
+
+        <table id="tabelaVeiculos" class="display">
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>Ford</td>
+                    <td>Ka</td>
+                    <td>2020</td>
+                    <td>Ativo</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Volkswagen</td>
+                    <td>Gol</td>
+                    <td>2021</td>
+                    <td>Ativo</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Fiat</td>
+                    <td>Uno</td>
+                    <td>2019</td>
+                    <td>Ativo</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Chevrolet</td>
+                    <td>Onix</td>
+                    <td>2022</td>
+                    <td>Ativo</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Hyundai</td>
+                    <td>HB20</td>
+                    <td>2023</td>
+                    <td>Ativo</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 Busca Fácil</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

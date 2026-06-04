@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks — Busca Fácil</title>
+
+    <link rel="icon" type="image/png" href="assets/procurar.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header-top">
+
+    <div class="logo-menu">
+        <img src="assets/logo3.png" alt="Logo">
+        <span>Busca Fácil</span>
+    </div>
+
+    <nav class="menu">
+
+        <a href="home.html">
+            <i class="fa-solid fa-house"></i>
+            Início
+        </a>
+
+        <a href="gerenciar.html">
+            <i class="fa-solid fa-car"></i>
+            Veículos
+        </a>
+
+        <a href="feedbacks.html">
+            <i class="fa-solid fa-comments"></i>
+            Feedbacks
+        </a>
+
+        <a href="sobre.html">
+            <i class="fa-solid fa-users"></i>
+            Sobre Nós
+        </a>
+
+        <a href="index.html" class="btn-login">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Sair
+        </a>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <h1 class="page-title">
+        Feedbacks dos Usuários
+    </h1>
+
+    <p class="page-subtitle">
+        Avalie o sistema e envie sugestões de melhoria.
+    </p>
+
+    <div class="section-card">
+
+        <form id="feedback-form">
+
+            <div class="field">
+
+                <label>Nome</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                    required>
+
+            </div>
+
+            <div class="field">
+
+                <label>Avaliação</label>
+
+                <select id="avaliacao" required>
+
+                    <option value="">
+                        Selecione
+                    </option>
+
+                    <option value="5">
+                        ⭐⭐⭐⭐⭐ Excelente
+                    </option>
+
+                    <option value="4">
+                        ⭐⭐⭐⭐ Muito Bom
+                    </option>
+
+                    <option value="3">
+                        ⭐⭐⭐ Bom
+                    </option>
+
+                    <option value="2">
+                        ⭐⭐ Regular
+                    </option>
+
+                    <option value="1">
+                        ⭐ Ruim
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="field">
+
+                <label>Sugestão</label>
+
+                <textarea
+                    id="sugestao"
+                    rows="5"
+                    placeholder="Digite sua sugestão ou comentário">
+                </textarea>
+
+            </div>
+
+            <button
+                type="submit"
+                class="btn-entrar">
+
+                <i class="fa-solid fa-paper-plane"></i>
+                Enviar Feedback
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <div
+        id="mensagem-sucesso"
+        class="section-card hidden">
+
+        <h3>
+            <i class="fa-solid fa-circle-check"></i>
+            Feedback enviado com sucesso!
+        </h3>
+
+        <p>
+            Obrigado por contribuir com a melhoria do sistema.
+        </p>
+
+    </div>
+
+</main>
+
+<footer>
+    <p> Localização: Blumenau/ SC  -  Contato: 0000-0000</p>
+   
+    <p>© 2026 Busca Fácil</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

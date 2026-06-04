@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Fácil - Início</title>
+
+    <link rel="icon" type="image/png" href="assets/procurar.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+<header class="header-top">
+
+    <div class="logo-menu">
+        <img src="assets/logo3.png" alt="Logo Busca Fácil">
+        <span>Busca Fácil</span>
+    </div>
+
+    <nav class="menu">
+
+        <a href="home.html">
+            <i class="fa-solid fa-house"></i>
+            <span>Início</span>
+        </a>
+
+        <a href="gerenciar.html">
+            <i class="fa-solid fa-car"></i>
+            <span>Veículos</span>
+        </a>
+
+        <a href="feedbacks.html">
+            <i class="fa-solid fa-comments"></i>
+            <span>Feedbacks</span>
+        </a>
+
+        <a href="atendimento.html">
+            <i class="fa-solid fa-headset"></i>
+            <span>Atendimento</span>
+        </a>
+
+        <a href="sobre.html">
+            <i class="fa-solid fa-users"></i>
+            <span>Sobre Nós</span>
+        </a>
+
+        <button id="toggleTheme" class="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+            Dark Mode
+        </button>
+
+        <a href="index.html" class="btn-login">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Sair</span>
+        </a>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <header class="header">
+
+        <img src="assets/logo3.png"
+             alt="Logo da empresa"
+             class="logo">
+
+        <h1>
+            VISTORIA <br>
+            VEICULAR
+        </h1>
+
+    </header>
+
+    <div class="search-container">
+
+        <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            placeholder="Ex: Ford Ka 2020">
+
+        <button
+            onclick="BuscarVeiculo()"
+            class="search-button">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Buscar
+
+        </button>
+
+    </div>
+
+    <div id="results" class="results-container hidden">
+
+        <div id="chassi-card" class="image-card">
+
+            <div class="card-label">
+                <i class="fa-solid fa-car-side"></i>
+                Chassi
+            </div>
+
+            <div class="card-img-wrap">
+                <img
+                    id="chassi-image"
+                    alt="Imagem do chassi">
+            </div>
+
+        </div>
+
+        <div id="motor-card" class="image-card">
+
+            <div class="card-label">
+                <i class="fa-solid fa-gear"></i>
+                Motor
+            </div>
+
+            <div class="card-img-wrap">
+                <img
+                    id="motor-image"
+                    alt="Imagem do motor">
+            </div>
+
+        </div>
+
+        <div id="message-card" class="image-card hidden">
+
+            <div class="error-card">
+
+                <i id="message-icon"
+                   class="fa-solid fa-triangle-exclamation"></i>
+
+                <p id="message-text"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Busca Fácil</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

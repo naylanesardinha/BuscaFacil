@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Busca Fácil</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="assets/procurar.png">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header-top">
+
+    <div class="logo-menu">
+        <img src="assets/logo3.png" alt="Logo">
+        <span>Busca Fácil</span>
+    </div>
+
+    <nav>
+        <a href="sobre.html">
+            <i class="fa-solid fa-circle-info"></i>
+            Sobre Nós
+        </a>
+    </nav>
+
+</header>
+
+<main>
+
+    <div class="login-container" id="login-container">
+
+        <img
+        src="assets/logo3.png"
+        alt="Logo"
+        class="login-logo">
+
+        <h1>Busca Fácil</h1>
+
+        <p>Acesse sua conta para continuar</p>
+
+        <form
+        class="login-form"
+        id="login-form">
+
+            <div class="field">
+
+                <span class="field-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </span>
+
+                <input
+                type="email"
+                id="email"
+                placeholder="E-mail"
+                required>
+
+            </div>
+
+            <div class="field field-senha">
+
+                <span class="field-icon">
+                    <i class="fa-solid fa-lock"></i>
+                </span>
+
+                <input
+                type="password"
+                id="senha"
+                placeholder="Senha"
+                required>
+
+                <div class="senha-actions">
+
+                    <button
+                    type="button"
+                    id="btnMostrar">
+
+                        <i
+                        class="fa-solid fa-eye"
+                        id="icone-olho">
+                        </i>
+
+                    </button>
+
+                    <button
+                    type="button"
+                    id="btnLimpar">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div
+            class="error-msg"
+            id="error-msg">
+
+                <i class="fa-solid fa-circle-exclamation"></i>
+
+                <span id="error-text">
+                    E-mail ou senha incorretos.
+                </span>
+
+            </div>
+
+            <button
+            type="submit"
+            class="btn-entrar"
+            id="btn-entrar">
+
+                <span id="btn-label">
+                    Entrar
+                </span>
+
+                <i
+                class="fa-solid fa-arrow-right-to-bracket"
+                id="btn-icon">
+                </i>
+
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 Busca Fácil</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
